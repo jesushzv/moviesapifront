@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 280px;
+    height: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.list{
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+}
+
+.list .nav-item1{
+    margin-right: 35px;
+}
+
+.list .nav-item2{
+    margin-right: 35px;
+}
+
+.header {
+    background-color: rgb(171, 38, 204);
+}
