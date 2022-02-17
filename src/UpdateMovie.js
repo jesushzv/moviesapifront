@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./UpdateMovie.css";
 
 const UpdateMovie = () => {
   //We need 3 parameters: Id, Field, Value
@@ -20,10 +21,11 @@ const UpdateMovie = () => {
   };
 
   return (
-    <div>
+    <div className="update">
       <h1>Update Movie</h1>
-
-      <form onSubmit={(e) => handleSubmit(e)}>
+      
+      <form className="form" onSubmit={(e) => handleSubmit(e)}>
+        <div className="update-id">
         <label>Id:</label>
         <input
           onChange={(e) => setMovie({ ...movie, id: e.target.value })}
@@ -31,6 +33,9 @@ const UpdateMovie = () => {
           name="id"
           required
         />
+        </div>
+        
+        <div className="update-field">
         <label for="fields">Field:</label>
         <select onChange={(e)=> setMovie({...movie,field:e.target.value})} name="field" id="fields">
           <option name="name" value="name">
@@ -49,9 +54,16 @@ const UpdateMovie = () => {
             Release Year
           </option>
         </select>
+        </div>
+        
+        <div className="update-value">
         <label>Value:</label>
         <input onChange={(e) => setMovie({ ...movie, value: e.target.value })} type={movie.field === "release_year" ? "number" : "text"} name="value" required />
+        </div>
+        <div className="update-btn">
         <button type="submit">Update</button>
+        </div>
+        
       </form>
     </div>
   );
