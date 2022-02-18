@@ -1,0 +1,43 @@
+.create{
+    margin-left: 20px;
+}
+
+
+
+.create-form{
+    margin-left: 70px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.create-name{
+    font-size: 20px;
+}
+
+.create-genre{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.create-releaseyear{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.create-description{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.create-picture{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.create-btn{
+    margin-top: 15px;
+}
+
+input{
+    margin-left: 10px;
+}

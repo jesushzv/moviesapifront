@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import "./CreateMovie.css";
 
 const CreateMovie = () => {
 
@@ -30,20 +31,37 @@ const CreateMovie = () => {
     }
     
     return(
-        <div>
+        <div className="create">
             <h1>Create Movie</h1>
-            <form onSubmit={(event)=>handleSubmit(event)}>
+            <form className="create-form" onSubmit={(event)=>handleSubmit(event)}>
+                <div className="create-name">
                 <label>Name:</label>
                 <input onChange={(event) => handleChange(event)} type="text" name="name" required/>
+                </div>
+
+                <div className="create-genre">
                 <label>Genre:</label>
                 <input onChange={(event) => handleChange(event)} type="text" name="genre" required/>
+                </div>
+
+                <div className="create-releaseyear">
                 <label>Release year:</label>
                 <input onChange={(event) => handleChange(event)} type="number" name="release_year" required/>
+                </div>
+
+                <div className="create-description">
                 <label>Description:</label>
                 <input onChange={(event) => handleChange(event)} type="text" name="description" required/>
+                </div>
+
+                <div className="create-picture">
                 <label>Picture:</label>
                 <input onChange={(event) => handleChange(event)} type="text" name="picture" required/>
+                </div>
+
+                <div className="create-btn">
                 <button type="submit">Create</button>
+                </div>
             </form>
         </div>
     )
