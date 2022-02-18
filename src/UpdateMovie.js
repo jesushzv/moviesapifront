@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const UpdateMovie = () => {
-  //We need 3 parameters: Id, Field, Value
   const [movie, setMovie] = useState({});
 
 
